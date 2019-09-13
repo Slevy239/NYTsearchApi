@@ -4,10 +4,10 @@
     text-align: center;
 }
 
-#search-parameters {
+.container {
     border: 1px solid black;
 }
-#search-params-text {
+#search-params-text, #top-articles-text {
     border: 1px solid black;
     background-color: navy;
     color: white;
