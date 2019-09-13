@@ -2,15 +2,6 @@
     background-color: navy !important;
     color: white;
 }
-<<<<<<< HEAD
 #search-form {
     border: 1px solid gray;
-=======
-
-#search-parameters {
-    border: 1px solid black;
-}
-.topBar {
-    border: 1px solid black
->>>>>>> 521b6f25f27811aded7d7efe2792de9ad1afed42
 }
