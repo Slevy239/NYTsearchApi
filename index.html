@@ -6,20 +6,30 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../NYTsearchApi/assets/css/style.css">
 <title>New York Times Search</title>
 </head>
 <body>
-    <div id="header" class="container">
+    <div id="header" class="container jumbotron">
         <h1>New York Times Search</h1>
     </div>
-    <div id="search-parameters">
+    <div id="search-parameters">Search Parameters
         <form action="">
             <div>Search Term: </div>
             <input type="text">
+            <div>Number of Records to Retrieve: </div>
+            <select name="records">
+                <option>1</option>
+                <option>5</option>
+                <option>10</option>
+            </select>
+            <div>Start Year(optional)</div>
+            <input type="text">
+            <button id="search"">Search</button>
+            <button id="clear"">Clear Results</button>
         </form>
     </div>
-    <div id="top-articles">
+    <div id="top-articles">Top Articles
 
     </div>
 
