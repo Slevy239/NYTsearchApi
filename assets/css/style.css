@@ -2,3 +2,10 @@
     background-color: navy !important;
     color: white;
 }
+
+#search-parameters {
+    border: 1px solid black;
+}
+.topBar {
+    border: 1px solid black
+}
