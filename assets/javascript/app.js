@@ -7,12 +7,17 @@ var APIKEY = "9pCVN4K5GzuFggvtfVXmxsiCGCOOsuwC";
 
 
 // on click function to begin a search for when the user clicks search button
-$('#search').on('click', function(){
+$('#search').on('click', function(event){
+
+    event.preventDefault();
 
     // create a variable to store the users search string
     var searchTerm = $('#searchTerm').text();
+    
 
-    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+searchTerm+'api-key='+APIKEY;
+
+    var searchTerm = 'cheeseburgers';
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+searchTerm+'&api-key='+APIKEY;
 
 
     $.ajax({
