@@ -1,21 +1,34 @@
 
 
-
-
-
+// APIKEY from the new york search developer app
 var APIKEY = "9pCVN4K5GzuFggvtfVXmxsiCGCOOsuwC";
-var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+SearchTerm+'api-key='+APIKEY;
 
 
 
 
-$.ajax({
-    url: queryURL,
-    method: "GET"
-}).then(function(response){
+// on click function to begin a search for when the user clicks search button
+$('#search').on('click', function(){
 
+    // create a variable to store the users search string
+    var searchTerm = $('#searchTerm').text();
+
+    var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+searchTerm+'api-key='+APIKEY;
+
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function(response){
     
-    console.log(response);
+        
+
+        console.log(response);
+    
+    
+    })
+
+
 
 
 })
+
