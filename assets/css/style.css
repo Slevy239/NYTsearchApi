@@ -2,3 +2,6 @@
     background-color: navy !important;
     color: white;
 }
+#search-form {
+    border: 1px solid gray;
+}
